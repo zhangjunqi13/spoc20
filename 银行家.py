@@ -43,14 +43,14 @@ class Bankers(object):
     def ExecuteProcess(self,index):
 
         #check if less avaliable than Request
-        # YOUR CODE, 2013011342
+        # YOUR CODE, 2013011436
         for j in range(len(self.need[index])):
             if self.need[index][j] > self.avaliable[j]:
                 return False
         #check END here
 
         #allocating what they need.
-        # YOUR CODE, 2013011342
+        # YOUR CODE, 2013011436
         for j in range(len(self.allocated[index])):
             self.allocated[index][j] += self.need[index][j]
             self.need[index][j] = 0
